@@ -1,0 +1,78 @@
+@import "tailwindcss";
+
+:root {
+  --bg-page: #F8FAFC;
+  --bg-surface: #FFFFFF;
+  --bg-subtle: #F1F5F9;
+  --border-subtle: #E2E8F0;
+  --border-strong: #CBD5E1;
+  --text-primary: #0F172A;
+  --text-secondary: #475569;
+  --text-muted: #94A3B8;
+
+  /* Executive Deep Charcoal Header Palette (no pitch black) */
+  --header-bg: #1A2030;
+  --header-surface: #222B40;
+  --header-border: #2E3A54;
+  --header-text: #E2E8F0;
+  --header-muted: #94A3B8;
+
+  /* Refined Semantic & Intent Accents */
+  --accent-blue: #2563EB;
+  --accent-blue-hover: #1D4ED8;
+  --accent-blue-subtle: #EFF6FF;
+  --accent-green: #10B981;
+  --accent-green-subtle: #ECFDF5;
+  --accent-amber: #D97706;
+  --accent-amber-subtle: #FFFBEB;
+  --accent-red: #EF4444;
+  --accent-red-subtle: #FEF2F2;
+
+  /* Font sizing & row height defaults (customizable in Settings) */
+  --crm-font-scale: 1;
+  --crm-row-height: 44px;
+  --crm-cell-pad-x: 14px;
+}
+
+/* 32" Ultrawide Preset override applied dynamically via class */
+.crm-ultrawide {
+  --crm-font-scale: 1.15;
+  --crm-row-height: 52px;
+  --crm-cell-pad-x: 20px;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: var(--bg-page);
+  color: var(--text-primary);
+  font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  overflow: hidden;
+  height: 100vh;
+}
+
+.font-mono-tabular {
+  font-family: 'JetBrains Mono', ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+  font-variant-numeric: tabular-nums;
+}
+
+/* Custom scrollbars that stay elegant and minimal */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #CBD5E1;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #94A3B8;
+}

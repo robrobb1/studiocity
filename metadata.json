@@ -1,0 +1,6 @@
+{
+  "name": "NorthVector CRM",
+  "description": "Ultra-premium multichannel executive sales CRM and pipeline desk with embedded telephony.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
